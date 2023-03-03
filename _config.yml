@@ -33,11 +33,11 @@ description: ""
 github:
   username: xuweikang
 swiftype:
-  searchId: iXZyPokVfxFaBTvi64Y6
+  searchId: 
 comment:
     repo: blog
-    client_id: a6fb73b3e790e234bab8
-    client_secret: cc10aaff53a03d05ab2ee002dbf401dd7627c7a3
+    client_id: dbf77f176519397e3a05
+    client_secret: 5d43499dd24b40d7772cda441e700d6c2b528291
 
 url: "https://xuweikang.github.io"
 imgrepo: "https://xuweikang.github.io/static/img"
