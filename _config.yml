@@ -1,25 +1,48 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
-baseurl:            "/"
-url:                "https://xuweikang.github.io"
+plugins: [jekyll-paginate]
 
-# Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  
-linkedin_username:
+permalink: /:categories/:title/
 
-# Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input:  GFM
+  syntax_highlighter: rouge
 
-# Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+
+paginate: 10
+paginate_path: "page/:num"
+baseurl: ""
+
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      styles : [highlight.css,post.css]
+      scripts : [post.js]
+
+
+
+title: "xuweikang"
+email: 1028606271@qq.com
+description: ""
+github:
+  username: xuweikang
+swiftype:
+  searchId: iXZyPokVfxFaBTvi64Y6
+comment:
+    repo: blog
+    client_id: a6fb73b3e790e234bab8
+    client_secret: cc10aaff53a03d05ab2ee002dbf401dd7627c7a3
+
+url: "https://xuweikang.github.io/blog"
+imgrepo: "https://xuweikang.github.io/blog/static/img"
+
+
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"
+
