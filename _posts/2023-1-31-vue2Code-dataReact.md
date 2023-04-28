@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 1. Vue2框架源码分析-响应式原理
+title: Vue2框架源码分析-响应式原理
 tags: Vue2 源码
 categories: SourceCodeAnalysis
 ---
@@ -134,7 +134,7 @@ obj.value.age = '31' // 改变数据
 
 1.  vue采用观察者模式实现的mvvm模式
 2.  每个data数据都会实例化一个Dep依赖管理器
-3.  每个vue模板文件在mounted生命周期的时候，会初始化一个渲染Watcher实例，并手动触发了一次本次渲染用到的所有data的get，进行依赖收集（dep.depend()，收集的其实就是watcher实例），如果数据改变触发了set，则会通知依赖管理器（dep.notify()），然后dep执行依赖们（watcher实例，可能不止一个）进行update更新。
+3.  每个vue模板文件在mounted生命周期的时候，会初始化一个渲染Watcher实例，并手动触发了一次本次渲染用到的所有data的get，进行依赖收集（dep.depend()，就是往watcher实例的subs里面追加），如果数据改变触发了set，则会通知依赖管理器（dep.notify()），然后dep执行依赖们（watcher实例，可能不止一个）进行update更新。
 
 ![image.png](/static/img/vue2/demo1.png)
 
