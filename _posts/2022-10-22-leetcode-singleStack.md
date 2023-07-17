@@ -2,7 +2,7 @@
 layout: post
 title: 单调栈的应用
 tags: 单调栈 stack
-categories: leecode
+categories: leetcode
 ---
 
 * TOC 
